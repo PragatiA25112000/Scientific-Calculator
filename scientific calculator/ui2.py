@@ -25,10 +25,14 @@ class Ui_MainWindow(object):
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
-
+        self.pushButton1 = QtWidgets.QPushButton("Click Me", self.centralwidget)
+        self.pushButton1.setGeometry(100, 100, 100, 30)  # Set the position and size of the button
+        self.pushButton1.setObjectName("btn1")
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Main  Window!!"))
+
+
